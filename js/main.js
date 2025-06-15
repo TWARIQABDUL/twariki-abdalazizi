@@ -83,10 +83,10 @@ function initializeScrollEffects() {
         
         // Header background opacity
         if (scrollTop > 50) {
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
+            // header.style.background = 'rgba(255, 255, 255, 0.98)';
             header.style.backdropFilter = 'blur(20px)';
         } else {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
+            // header.style.background = 'rgba(255, 255, 255, 0.95)';
             header.style.backdropFilter = 'blur(10px)';
         }
         
@@ -121,9 +121,10 @@ function updateActiveNavLink() {
  */
 function initializeSkillBars() {
     const observerOptions = {
-        threshold: 0.5,
-        rootMargin: '0px 0px -100px 0px'
-    };
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1 // or lower like 0.05 for more sensitivity
+};
     
     const skillObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
