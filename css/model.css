@@ -91,3 +91,30 @@
 .gallery-thumbnails::-webkit-scrollbar {
   display: none;
 }
+.lightbox{
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-content{
+    position: relative;
+}
+.lightbox-close{
+        position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: .5rem;
+    background: transparent;
+    /* color: var(--text-primary); */
+    font-size: var(--spacing-md);
+    border-radius: var(--border-radius-large);
+    border: 2px solid var(--text-light);
+}
+.lightbox-counter{
+    position: absolute;
+    bottom: 10px;
+    color: var(--text-primary);
+    background: var(--text-light);
+    right: 10px;
+    padding: var(--spacing-xs);
+    border-radius: var(--border-radius);
+}
