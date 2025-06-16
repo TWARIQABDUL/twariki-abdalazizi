@@ -10,38 +10,37 @@ class ProjectGallery {
         this.projectData = {
             project1: {
                 title: 'E-commerce Platform',
-                description: 'A comprehensive Smart ride And ticketing Sollution',
+                description: 'A comprehensive Store inventory to faccilitate the easy acces on online product',
                 images: [
-                    'https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=800',
-                    'https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&w=800',
-                    'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800'
+                    'images/cart.jpg?auto=compress&cs=tinysrgb&w=800',
+                    'images/store1.jpg?auto=compress&cs=tinysrgb&w=800',
+                    'images/delivery.jpg?auto=compress&cs=tinysrgb&w=800',
+                    
                 ],
                 technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux', 'Express.js'],
                 features: [
                     'User authentication and authorization',
                     'Access Control Role Mechanism',
-                    'Requesting and accepting Rides',
                     'Secure payment processing with Stripe',
                     'Order tracking and management',
                     'Admin dashboard for inventory management',
                     'Responsive design for all devices',
                     'Real-time notifications',
-                    'Mobile Apk'
                 ],
                 liveUrl: '#',
-                githubUrl: 'https://github.com/TWARIQABDUL/smart-ride',
+                githubUrl: 'https://github.com/TWARIQABDUL/abubastore/tree/frontend',
                 completionDate: 'March 2024',
-                client: 'RetailCorp Inc.'
+                client: 'Abouba Store Inc.'
             },
             project2: {
-                title: 'MOvie Pire Application',
+                title: 'Movie Pire Application',
                 description: 'A Movie Stream website tha keeps you and your family updated and enjoy the moment',
                 images: [
-                    'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
-                    'https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=800',
-                    'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800'
+                    'images/movie1.jpg?auto=compress&cs=tinysrgb&w=800',
+                    'images/movie2.jpg?auto=compress&cs=tinysrgb&w=800',
+                    'images/movie3.jpg?auto=compress&cs=tinysrgb&w=800'
                 ],
-                technologies: ['Vue.js', 'Socket.io', 'PostgreSQL', 'Redis', 'Express.js', 'JWT'],
+                technologies: ['React JS', 'Socket.io', 'MySQL', 'Laravel PHP', 'JWT'],
                 features: [
                     'Real-time collaboration with WebSocket',
                     'User Registration And Authntication Mechanism',
@@ -66,7 +65,7 @@ class ProjectGallery {
                     'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
                     'https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=800'
                 ],
-                technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL', 'Redis'],
+                technologies: ['React', 'D3.js','FastAPI', 'ySQL', 'Redis'],
                 features: [
                     'Interactive charts and graphs with D3.js',
                     'Real-time data streaming',
@@ -153,7 +152,7 @@ class ProjectGallery {
         const content = `
             <article class="project-detail">
                 <header class="project-header">
-                    <h2 class="project-title">hhh${project.title}</h2>
+                    <h2 class="project-title">${project.title}</h2>
                     <div class="project-meta">
                         <span class="completion-date">Completed: ${project.completionDate}</span>
                         <span class="client">Client: ${project.client}</span>
