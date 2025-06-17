@@ -226,7 +226,7 @@ a:hover {
 .bar {
     width: 25px;
     height: 3px;
-    background: var(--primary-color);
+    background: var(--text-primary);
     margin: 3px 0;
     transition: var(--transition-fast);
     border-radius: 2px;
